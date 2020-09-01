@@ -57,7 +57,6 @@ endif
 .KATI_READONLY := $(foreach n,$(SOONG_CONFIG_NAMESPACES),$(foreach k,$(SOONG_CONFIG_$(n)),SOONG_CONFIG_$(n)_$(k)))
 
 include $(SOONG_MAKEVARS_MK)
-
 include $(BUILD_SYSTEM)/clang/config.mk
 
 # Write the build number to a file so it can be read back in
